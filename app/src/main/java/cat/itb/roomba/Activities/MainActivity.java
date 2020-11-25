@@ -20,6 +20,7 @@ import cat.itb.roomba.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView tv_titol;
     private Button b_play, b_records;
     private List<Pregunta> preguntes;
 
@@ -35,16 +36,20 @@ public class MainActivity extends AppCompatActivity {
 
         b_play = findViewById(R.id.b_play);
         b_records = findViewById(R.id.b_records);
-
+        tv_titol = findViewById(R.id.tv_titol);
         db = AppDatabase.getInstance(this.getApplicationContext());
         pDao = db.preguntaDao();
         punDao = db.puntuacioDao();
         repo= new Repository(pDao,punDao);
 
-        preguntes = repo.getPreguntes();
 
+        pDao.drop();
+        //preguntes = repo.getPreguntes();
+        int count = repo.getCountPreguntes();
 
+        //b_records.setText(preguntes.get(0).getEnunciat());
 
+        tv_titol.setText(Integer.toString(count));
         b_play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

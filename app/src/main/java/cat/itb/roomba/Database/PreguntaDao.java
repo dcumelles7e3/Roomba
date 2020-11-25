@@ -25,4 +25,9 @@ public interface PreguntaDao {
     @Query("SELECT * FROM pregunta_table WHERE id_pregunta = :idPregunta")
     Pregunta findById(int idPregunta);
 
+    @Query("SELECT COUNT(*) FROM pregunta_table")
+    int getCountPreguntes();
+
+    @Query("DELETE FROM pregunta_table")
+    void drop();
 }

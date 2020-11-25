@@ -19,6 +19,8 @@ public class Repository {
         return this.punDao.getAll();
     }
 
+    public void deleteAllPreguntes(){this.pDao.drop();}
+    public int getCountPreguntes(){return this.pDao.getCountPreguntes();}
     public void insertPregunta(Pregunta p) {this.pDao.insert(p);}
     public void deletePregunta(Pregunta p) {this.pDao.delete(p);}
     public Pregunta findPreguntaById(int idPregunta){return this.pDao.findById(idPregunta);}
