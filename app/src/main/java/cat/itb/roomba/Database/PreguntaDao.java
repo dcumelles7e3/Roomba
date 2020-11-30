@@ -28,6 +28,9 @@ public interface PreguntaDao {
     @Query("SELECT COUNT(*) FROM pregunta_table")
     int getCountPreguntes();
 
+    @Query("SELECT * FROM pregunta_table ORDER BY RANDOM() LIMIT 5")
+    List<Pregunta> getFive();
+
     @Query("DELETE FROM pregunta_table")
-    void drop();
+    void dropPreguntes();
 }

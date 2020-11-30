@@ -10,7 +10,7 @@ import java.util.List;
 
 @Dao
 public interface PuntuacioDao {
-    @Query("SELECT * FROM puntuacio_table")
+    @Query("SELECT * FROM puntuacio_table ORDER BY puntuacio DESC")
     List<Puntuacio> getAll();
 
     @Insert
@@ -24,5 +24,8 @@ public interface PuntuacioDao {
 
     @Query("SELECT * FROM puntuacio_table WHERE id_puntuacio = :idPuntuacio")
     Puntuacio findById(int idPuntuacio);
+
+    @Query("DELETE FROM puntuacio_table")
+    void dropPuntuacio();
 
 }

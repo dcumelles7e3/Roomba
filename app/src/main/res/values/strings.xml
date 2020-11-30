@@ -1,3 +1,57 @@
 <resources>
     <string name="app_name">Roomba</string>
+    <string name="titol">Juego de Preguntas</string>
+    <string name="play">Jugar</string>
+    <string name="records">Puntuaciones</string>
+    <string name="introduce_respuesta">Introduce respuesta</string>
+    <string name="volver">Volver al Inicio</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="puntuacion">PUNTUACIÓN</string>
+    <string name="reset">Resetear Puntuaciones</string>
+    <string name="empezar">Empezar</string>
+    <string name="name_in">Introduce tu nombre</string>
+    <string-array name="preguntes">
+        <item>¿Quién es el autor de el Quijote?</item>
+        <item>¿Qué año llegó Cristóbal Colón a América?</item>
+        <item>¿En qué año comenzó la II Guerra Mundial?</item>
+        <item>¿Cual es país más poblado de la Tierra?</item>
+        <item>¿A quién le crecía la nariz cuando mentía?</item>
+        <item>¿Cuál es tercer planeta del sistema solar?</item>
+        <item>¿Cómo se llama el triángulo que tiene sus tres lados iguales?</item>
+        <item>¿En qué país se encuentra el Taj Mahal?</item>
+        <item>Primer lider de Gimnasio en Kanto</item>
+        <item>Jefe final de Dark Souls</item>
+        <item>¿Cuántos años tiene un lustro?</item>
+        <item>¿Pokemon numero 151?</item>
+        <item>¿Médico del corazón?</item>
+        <item>Si tú me dices ven…</item>
+        <item>Nombre del grupo de Ana Torroja</item>
+        <item>¿En qué canal echan el Salvame?</item>
+        <item>¿Cuantas estrellas hay en el Sistema Solar?</item>
+        <item>¿Quien fundó Microsoft?</item>
+        <item>Primer mes del año</item>
+        <item>¿Quién canta Tears in Heaven?</item>
+    </string-array>
+    <string-array name="respostes">
+        <item>Miguel de Cervantes</item>
+        <item>1492</item>
+        <item>1939</item>
+        <item>China</item>
+        <item>Pinocho</item>
+        <item>Tierra</item>
+        <item>Equilatero</item>
+        <item>India</item>
+        <item>Brock</item>
+        <item>Gwyn</item>
+        <item>5</item>
+        <item>Mew</item>
+        <item>Cardiólogo</item>
+        <item>Lo dejo todo</item>
+        <item>Mecano</item>
+        <item>Telecinco</item>
+        <item>1</item>
+        <item>Bill Gates</item>
+        <item>Enero</item>
+        <item>Eric Clapton</item>
+    </string-array>
 </resources>

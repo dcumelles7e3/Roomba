@@ -12,14 +12,14 @@ public class Repository {
     }
 
     public List<Pregunta> getPreguntes(){
-        return this.pDao.getAll();
+        return this.pDao.getFive();
     }
 
     public List<Puntuacio> getPuntuacions(){
         return this.punDao.getAll();
     }
 
-    public void deleteAllPreguntes(){this.pDao.drop();}
+    public void deleteAllPreguntes(){this.pDao.dropPreguntes();}
     public int getCountPreguntes(){return this.pDao.getCountPreguntes();}
     public void insertPregunta(Pregunta p) {this.pDao.insert(p);}
     public void deletePregunta(Pregunta p) {this.pDao.delete(p);}
