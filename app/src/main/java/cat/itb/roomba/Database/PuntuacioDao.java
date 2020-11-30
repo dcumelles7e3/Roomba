@@ -16,16 +16,6 @@ public interface PuntuacioDao {
     @Insert
     void insert(Puntuacio p);
 
-    @Update
-    void update(Puntuacio p);
-
-    @Delete
-    void delete(Puntuacio p);
-
-    @Query("SELECT * FROM puntuacio_table WHERE id_puntuacio = :idPuntuacio")
-    Puntuacio findById(int idPuntuacio);
-
     @Query("DELETE FROM puntuacio_table")
     void dropPuntuacio();
-
 }

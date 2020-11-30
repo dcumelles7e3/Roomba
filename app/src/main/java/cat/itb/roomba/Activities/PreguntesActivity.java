@@ -146,7 +146,6 @@ public class PreguntesActivity extends AppCompatActivity {
             }else {
                 finalizar();
             }
-
         }
     }
 }

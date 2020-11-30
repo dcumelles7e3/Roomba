@@ -26,15 +26,7 @@ public class Pregunta {
         return enunciat;
     }
 
-    public void setEnunciat(String enunciat) {
-        this.enunciat = enunciat;
-    }
-
     public String getResposta() {
         return resposta;
-    }
-
-    public void setResposta(String resposta) {
-        this.resposta = resposta;
     }
 }

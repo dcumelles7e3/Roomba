@@ -10,20 +10,8 @@ import java.util.List;
 
 @Dao
 public interface PreguntaDao {
-    @Query("SELECT * FROM pregunta_table")
-    List<Pregunta> getAll();
-
     @Insert
     void insert(Pregunta p);
-
-    @Update
-    void update(Pregunta p);
-
-    @Delete
-    void delete(Pregunta p);
-
-    @Query("SELECT * FROM pregunta_table WHERE id_pregunta = :idPregunta")
-    Pregunta findById(int idPregunta);
 
     @Query("SELECT COUNT(*) FROM pregunta_table")
     int getCountPreguntes();

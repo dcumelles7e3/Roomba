@@ -27,15 +27,7 @@ public class Puntuacio {
         return user_name;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
-    }
-
     public int getPuntuacio() {
         return puntuacio;
-    }
-
-    public void setPuntuacio(int puntuacio) {
-        this.puntuacio = puntuacio;
     }
 }
